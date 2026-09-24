@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Facebook Profile Title -->
+
+    <!-- Background Image -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Facebook Profile"
+        android:textColor="#0000FF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="-11dp"
+        android:contentDescription="Background"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg" />
+
+    <!-- Circular Profile Image -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="200dp"
+        android:layout_height="190dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:cardCornerRadius="180dp"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Profile picture"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/profile" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="ADITHYAN K"
+        android:textColor="#222222"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Home -->
+    <LinearLayout
+        android:id="@+id/li"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:contentDescription="Home"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/home" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="75dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Chat -->
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="65dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:contentDescription="Chat"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/chat1" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="60dp"
+            android:layout_height="27dp"
+            android:gravity="center"
+            android:text="Chat"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Edit -->
+    <LinearLayout
+        android:id="@+id/editLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="28dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="39dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:contentDescription="Edit"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/edit" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="79dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Location Icon -->
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/li"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Location"
+        app:srcCompat="@drawable/location" />
+
+    <!-- Location Text -->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageView11"
+        android:layout_marginStart="72dp"
+        android:text="CALICUT"
+        android:textColor="#0000FF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Study Icon -->
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageView11"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Education"
+        app:srcCompat="@drawable/study" />
+
+    <!-- Education Text -->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageView12"
+        android:layout_marginStart="72dp"
+        android:text="KMCT College of Business"
+        android:textColor="#0000FF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
